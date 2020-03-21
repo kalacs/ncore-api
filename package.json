@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "Zoltan Kakuk <sz.zoltan.kakuk@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "got": "^10.6.0"
+  }
 }
