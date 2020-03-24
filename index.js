@@ -2,7 +2,6 @@
 require('dotenv').config();
 const makeScraper = require('./lib/scraper');
 
-// get latest movies
 (async () => {
   try {
     const scraper = makeScraper({
@@ -10,6 +9,7 @@ const makeScraper = require('./lib/scraper');
       password: process.env.NCORE_PASSHASH,
       type: 'ncore',
     });
+    // get latest movies
     const movies = await scraper.getMovies();
     console.dir(movies);
   } catch (error) {

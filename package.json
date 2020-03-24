@@ -22,7 +22,7 @@
     "prettier": "^1.19.1"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=11"
   },
   "scripts": {
     "start": "node index.js"
