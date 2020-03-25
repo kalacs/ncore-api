@@ -8,6 +8,7 @@
   "private": false,
   "dependencies": {
     "dotenv": "^8.2.0",
+    "fastify": "^2.13.0",
     "form-data": "^3.0.0",
     "got": "^10.6.0",
     "htmlparser2": "^4.1.0",
@@ -26,6 +27,7 @@
     "node": ">=11"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start-server": "node server.js"
   }
 }
