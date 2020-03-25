@@ -10,7 +10,9 @@ const makeScraper = require('./lib/scraper');
       type: 'ncore',
     });
     // get latest movies
-    const movies = await scraper.getMovies();
+    const movies = await scraper.getMovies({
+      genres: ['animáció', 'vígjáték'],
+    });
     console.dir(movies);
   } catch (error) {
     console.dir(error);
