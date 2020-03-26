@@ -11,7 +11,7 @@ const makeScraper = require('./lib/scraper');
     });
     // get latest movies
     const movies = await scraper.getMovies({
-      genres: ['animáció', 'vígjáték'],
+      genres: ['animáció'],
     });
     console.dir(movies);
   } catch (error) {
