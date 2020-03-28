@@ -15,7 +15,7 @@ const makeScraper = require('./lib/scraper');
     });
 */
     const movies = await scraper.getMovie('3004223');
-    console.dir(movies);
+    console.log(movies);
   } catch (error) {
     console.dir(error);
   }
