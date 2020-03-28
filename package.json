@@ -1,6 +1,6 @@
 {
   "name": "ncore-api",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Ncore REST Api",
   "main": "index.js",
   "author": "Zoltan Kakuk <sz.zoltan.kakuk@gmail.com>",
