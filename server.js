@@ -3,15 +3,23 @@ require('dotenv').config();
 const fastify = require('fastify')({ logger: true });
 const makeScraper = require('./lib/scraper');
 
+const scraper = makeScraper({
+  username: process.env.NCORE_NICK,
+  password: process.env.NCORE_PASSHASH,
+  type: 'ncore',
+});
 // Declare a route
 fastify.get('/movies', async (request, reply) => {
   try {
-    const scraper = makeScraper({
-      username: process.env.NCORE_NICK,
-      password: process.env.NCORE_PASSHASH,
-      type: 'ncore',
-    });
-    return scraper.getMovies();
+    reply.send(await scraper.getMovies({ genres: [] }));
+  } catch (error) {
+    console.dir(error);
+  }
+});
+
+fastify.get('/movies/:id', async (request, reply) => {
+  try {
+    reply.send(await scraper.getMovie(request.params.id));
   } catch (error) {
     console.dir(error);
   }

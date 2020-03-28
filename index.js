@@ -11,10 +11,10 @@ const makeScraper = require('./lib/scraper');
     });
     // get latest movies
     /*    const movies = await scraper.getMovies({
-      genres: ['animáció'],
+      genres: [],
     });
 */
-    const movies = await scraper.getMovie('3004223');
+    const movies = await scraper.getMovie('3006188');
     console.log(movies);
   } catch (error) {
     console.dir(error);
