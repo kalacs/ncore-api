@@ -19,7 +19,15 @@ fastify.get('/movies', async (request, reply) => {
 
 fastify.get('/movies/:id', async (request, reply) => {
   try {
-    reply.send(await scraper.getMovie(request.params.id));
+    return scraper.getMovie(request.params.id);
+  } catch (error) {
+    console.dir(error);
+  }
+});
+
+fastify.get('/torrent/:id', async (request, reply) => {
+  try {
+    return scraper.getTorrentFile(request.params.id);
   } catch (error) {
     console.dir(error);
   }
