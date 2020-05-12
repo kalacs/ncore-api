@@ -1,7 +1,7 @@
 {
-  "name": "ncore-api",
-  "version": "0.2.0",
-  "description": "Ncore REST Api",
+  "name": "ncore-scraper",
+  "version": "0.3.0",
+  "description": "Ncore scraper",
   "main": "index.js",
   "author": "Zoltan Kakuk <sz.zoltan.kakuk@gmail.com>",
   "license": "MIT",
