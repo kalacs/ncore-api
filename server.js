@@ -25,6 +25,10 @@ fastify.get('/movies/:id', async (request, reply) => {
   }
 });
 
+fastify.get('/moviesByImdb/:id', ({ params: { id } }) =>
+  scraper.getMovieByImdb(id)
+);
+
 fastify.get('/torrent/:id', async (request, reply) => {
   try {
     return scraper.getTorrentFile(request.params.id);
