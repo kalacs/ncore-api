@@ -8,6 +8,11 @@ const scraper = makeScraper({
   password: process.env.NCORE_PASSHASH,
   type: 'ncore',
 });
+
+fastify.register(require('fastify-cors'), {
+  origin: ['http://localhost:8080'],
+});
+
 // Declare a route
 fastify.get('/movies', async (request, reply) => {
   try {
