@@ -1,13 +1,11 @@
 {
-  "name": "ncore-scraper",
-  "version": "0.3.1",
+  "name": "ncore-api",
+  "version": "0.4.0",
   "description": "Ncore scraper",
   "main": "index.js",
   "author": "Zoltan Kakuk <sz.zoltan.kakuk@gmail.com>",
   "license": "MIT",
-  "private": false,
   "dependencies": {
-    "dotenv": "^8.2.0",
     "fastify": "^2.13.0",
     "fastify-cors": "^3.0.3",
     "form-data": "^3.0.0",
@@ -27,8 +25,5 @@
   "engines": {
     "node": ">=11"
   },
-  "scripts": {
-    "start": "node index.js",
-    "start:server": "node server.js"
-  }
+  "scripts": {}
 }
