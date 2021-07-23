@@ -1,6 +1,6 @@
 {
   "name": "ncore-api",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Ncore scraper",
   "main": "index.js",
   "author": "Zoltan Kakuk <sz.zoltan.kakuk@gmail.com>",
